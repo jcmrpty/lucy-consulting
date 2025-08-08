@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const organizationSchema = {
@@ -24,7 +25,7 @@ export default function Home() {
       "@type": "Person",
       "name": "Gladis Morales",
       "jobTitle": "Directora General",
-      "description": "Licenciada en Administración de Sistemas de Información y Maestría en Administración de la Confiabilidad. Más de 25 años de experiencia en comercialización de ERP's y CRM's."
+      "description": "Licenciada en Administración de Sistemas de Información y Maestría en Administración de la Confiabilidad. Más de 25 años de experiencia en comercialización de ERPs y CRMs."
     },
     "sameAs": [
       "https://linkedin.com/company/lucy-consulting"
@@ -104,12 +105,12 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full bg-[#0F1C2A]/90 backdrop-blur-md shadow-lg">
         <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16" role="navigation" aria-label="Navegación principal">
           <h1 className="text-2xl font-bold text-[#3574E3] tracking-wide">
-            <a href="/" aria-label="Lucy Consulting - Inicio">Lucy Consulting</a>
+            <Link href="/" aria-label="Lucy Consulting - Inicio">Lucy Consulting</Link>
           </h1>
 
           <div className="hidden md:flex space-x-6 text-white/90 text-sm font-medium">
             <a href="#quienes-somos" className="hover:text-[#3574E3] transition">Quiénes Somos</a>
-            <a href="/servicios" className="hover:text-[#3574E3] transition">Servicios</a>
+            <Link href="/servicios" className="hover:text-[#3574E3] transition">Servicios</Link>
             <a href="#valores" className="hover:text-[#3574E3] transition">Valores</a>
             <a href="#contacto" className="hover:text-[#3574E3] transition">Contacto</a>
           </div>
@@ -247,7 +248,7 @@ export default function Home() {
         <div className="space-y-4 mb-6">
           <div className="flex items-start">
             <span className="w-2 h-2 bg-[#3574E3] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            <span className="text-gray-700">Más de <strong>25 años</strong> de experiencia en comercialización de ERP's y CRM's.</span>
+            <span className="text-gray-700">Más de <strong>25 años</strong> de experiencia en comercialización de ERPs y CRMs.</span>
           </div>
           <div className="flex items-start">
             <span className="w-2 h-2 bg-[#3574E3] rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -271,7 +272,7 @@ export default function Home() {
         {/* Botón LinkedIn centrado */}
         <div className="flex justify-center">
           <a
-            href="https://www.linkedin.com/in/juan-carlos-morales-7324a441/" // Puedes cambiar a perfil de Gladis si tiene uno
+            href="https://www.linkedin.com/in/juan-carlos-morales-7324a441/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#0077B5] hover:bg-[#005983] text-white px-4 py-2 rounded-full shadow transition"
@@ -315,13 +316,13 @@ export default function Home() {
                   Lideramos implementaciones de ERP y CRM asegurando alineación estratégica, 
                   gestión del cambio y entregas sin riesgos.
                 </p>
-                <a
+                <Link
                   href="/servicios/project-management-erp-crm"
                   className="inline-flex text-[#3574E3] font-semibold hover:text-[#60A5FA] transition"
                   aria-label="Más información sobre Project Management ERP/CRM"
                 >
                   Más información sobre Project Management ERP/CRM →
-                </a>
+                </Link>
               </article>
 
               {/* Servicio 2 */}
@@ -336,13 +337,13 @@ export default function Home() {
                   Analizamos y optimizamos procesos de negocio, reduciendo ineficiencias y alineándolos 
                   con los objetivos estratégicos para lograr operaciones más ágiles y escalables.
                 </p>
-                <a
+                <Link
                   href="/servicios/mapeo-procesos"
                   className="inline-flex text-[#3574E3] font-semibold hover:text-[#60A5FA] transition"
                   aria-label="Más información sobre Mapeo de Procesos"
                 >
                   Más información sobre Mapeo de Procesos →
-                </a>
+                </Link>
               </article>
 
               {/* Servicio 3 */}
@@ -357,17 +358,18 @@ export default function Home() {
                   Acompañamiento neutral en la selección e implementación de sistemas ERP o CRM, 
                   garantizando decisiones objetivas, eficiencia y control financiero.
                 </p>
-                <a
+                <Link
                   href="/servicios/consultoria-independiente"
                   className="inline-flex text-[#3574E3] font-semibold hover:text-[#60A5FA] transition"
                   aria-label="Más información sobre Consultoría"
                 >
                   Más información sobre Consultoría →
-                </a>
+                </Link>
               </article>
             </div>
           </div>
         </section>
+
 {/* MÉTRICAS DE ÉXITO */}
 <section className="py-20 bg-[#0F1C2A] text-white">
   <div className="max-w-7xl mx-auto px-6">
@@ -412,7 +414,7 @@ export default function Home() {
         <h3 className="font-semibold text-[#3574E3] mb-2">Email</h3>
         <p className="text-lg mb-4">info@lucyconsulting.com</p>
         <a
-          href="https://www.linkedin.com/in/juan-carlos-morales-7324a441/" // ← Usa tu URL real aquí
+          href="https://www.linkedin.com/in/juan-carlos-morales-7324a441/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#0077B5] hover:bg-[#005983] text-white px-4 py-2 rounded-full shadow transition"
@@ -476,10 +478,10 @@ export default function Home() {
             y consultoría de implementación para empresas en Latinoamérica.
           </p>
           <div className="mt-4 space-x-4">
-            <a href="/servicios" className="text-blue-200 hover:text-white transition">Todos los Servicios</a>
-            <a href="/servicios/project-management-erp-crm" className="text-blue-200 hover:text-white transition">Project Management</a>
-            <a href="/servicios/mapeo-procesos" className="text-blue-200 hover:text-white transition">Mapeo de Procesos</a>
-            <a href="/servicios/consultoria-independiente" className="text-blue-200 hover:text-white transition">Consultoría Independiente</a>
+            <Link href="/servicios" className="text-blue-200 hover:text-white transition">Todos los Servicios</Link>
+            <Link href="/servicios/project-management-erp-crm" className="text-blue-200 hover:text-white transition">Project Management</Link>
+            <Link href="/servicios/mapeo-procesos" className="text-blue-200 hover:text-white transition">Mapeo de Procesos</Link>
+            <Link href="/servicios/consultoria-independiente" className="text-blue-200 hover:text-white transition">Consultoría Independiente</Link>
             <a href="#contacto" className="text-blue-200 hover:text-white transition">Contacto</a>
           </div>
         </div>

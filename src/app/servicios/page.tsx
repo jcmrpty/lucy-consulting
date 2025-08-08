@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Servicios() {
   const serviceSchema = {
@@ -173,13 +174,13 @@ export default function Servicios() {
       <header className="sticky top-0 z-50 w-full bg-[#0F1C2A]/90 backdrop-blur-md shadow-lg">
         <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16" role="navigation" aria-label="Navegación principal">
           <h1 className="text-2xl font-bold text-[#3574E3] tracking-wide">
-            <a href="/" aria-label="Lucy Consulting - Inicio">Lucy Consulting</a>
+            <Link href="/" aria-label="Lucy Consulting - Inicio">Lucy Consulting</Link>
           </h1>
 
           <div className="hidden md:flex space-x-6 text-white/90 text-sm font-medium">
-            <a href="/#quienes-somos" className="hover:text-[#3574E3] transition">Quiénes Somos</a>
-            <a href="/servicios" className="hover:text-[#3574E3] transition text-[#3574E3]" aria-current="page">Servicios</a>
-            <a href="/#valores" className="hover:text-[#3574E3] transition">Valores</a>
+            <Link href="/#quienes-somos" className="hover:text-[#3574E3] transition">Quiénes Somos</Link>
+            <Link href="/servicios" className="hover:text-[#3574E3] transition text-[#3574E3]" aria-current="page">Servicios</Link>
+            <Link href="/#valores" className="hover:text-[#3574E3] transition">Valores</Link>
             <a href="#faq" className="hover:text-[#3574E3] transition">FAQ</a>
             <a href="#contacto" className="hover:text-[#3574E3] transition">Contacto</a>
           </div>
@@ -509,9 +510,9 @@ export default function Servicios() {
             y optimización de procesos para empresas en Latinoamérica.
           </p>
           <div className="mt-4 space-x-4">
-            <a href="/servicios" className="text-blue-200 hover:text-white transition">Servicios</a>
+            <Link href="/servicios" className="text-blue-200 hover:text-white transition">Servicios</Link>
             <a href="#contacto" className="text-blue-200 hover:text-white transition">Contacto</a>
-            <a href="/privacy" className="text-blue-200 hover:text-white transition">Privacidad</a>
+            <Link href="/privacy" className="text-blue-200 hover:text-white transition">Privacidad</Link>
           </div>
         </div>
       </footer>
