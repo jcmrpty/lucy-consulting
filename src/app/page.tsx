@@ -474,7 +474,7 @@ export default function Home() {
       <footer className="bg-[#0F1C2A] text-white py-8">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-blue-100">
-            © 2024 Lucy Consulting. Especialistas en Project Management ERP/CRM 
+            © 2024 Lucy Consulting. Especialistas en P roject Management ERP/CRM 
             y consultoría de implementación para empresas en Latinoamérica.
           </p>
           <div className="mt-4 space-x-4">
