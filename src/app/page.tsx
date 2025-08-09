@@ -1,346 +1,194 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
-  // Schema.org optimizado para Organization
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Lucy Consulting",
-    "alternateName": "Lucy Consulting Guatemala",
-    "url": "https://lucy-consulting-evdq.vercel.app",
-    "logo": "https://lucy-consulting-evdq.vercel.app/images/lucy-consulting-logo.png",
-    "description": "Consultoría independiente especializada en Project Management ERP/CRM (Microsoft Dynamics, SAP, NetSuite, Odoo) y optimización de procesos para empresas medianas y grandes en Latinoamérica.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": ["GT", "PA"],
-      "addressRegion": ["Guatemala", "Panamá"],
-      "addressLocality": "Guatemala, Panamá"
-    },
-    "areaServed": [
-      {
-        "@type": "Country",
-        "name": "Guatemala"
-      },
-      {
-        "@type": "Country", 
-        "name": "Panamá"
-      },
-      {
-        "@type": "Place",
-        "name": "Latinoamérica"
-      }
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+502-4517-2699",
-      "contactType": "customer service",
-      "email": "lucyconsultinggt@gmail.com",
-      "availableLanguage": "Spanish"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Gladis Morales",
-      "jobTitle": "Directora General y Fundadora",
-      "description": "Licenciada en Administración de Sistemas de Información y Maestría en Administración de la Confiabilidad. Más de 25 años de experiencia en implementación de ERPs y CRMs en Latinoamérica.",
-      "hasCredential": [
-        "SCRUM Foundation",
-        "White Belt Lean Six Sigma"
-      ]
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/gladis-morales-1a891a35/"
-    ],
-    "serviceArea": {
-      "@type": "Place",
-      "name": "Centroamérica y Latinoamérica"
-    },
-    "knowsAbout": [
-      "Microsoft Dynamics ERP",
-      "Microsoft Dynamics CRM", 
-      "SAP ERP",
-      "SAP CRM",
-      "NetSuite ERP",
-      "NetSuite CRM",
-      "Odoo ERP",
-      "Odoo CRM",
-      "Project Management",
-      "Business Process Mapping",
-      "Digital Transformation"
-    ]
-  };
-
+export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#101D2B] text-white font-sans">
-      <Head>
-        {/* Meta básicos optimizados */}
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        {/* Title optimizado con keywords principales */}
-        <title>Lucy Consulting | Project Management ERP/CRM Microsoft Dynamics, SAP, NetSuite | Guatemala Latinoamérica</title>
-        
-        {/* Meta description optimizada */}
-        <meta
-          name="description"
-          content="Consultoría independiente especializada en Project Management ERP/CRM (Microsoft Dynamics, SAP, NetSuite, Odoo) y optimización de procesos para empresas medianas y grandes en Latinoamérica. +25 años de experiencia en transformación digital."
-        />
-        
-        {/* Keywords estratégicas */}
-        <meta name="keywords" content="consultoría ERP Guatemala, project management CRM Latinoamérica, Microsoft Dynamics, SAP implementación, NetSuite, Odoo, optimización procesos, transformación digital, Lucy Consulting, Gladis Morales, consultor independiente ERP" />
-        
-        {/* Robots optimizado */}
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-        
-        {/* Canonical */}
-        <link rel="canonical" href="https://lucy-consulting-evdq.vercel.app" />
-        
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        
-        {/* Open Graph optimizado */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Lucy Consulting | Project Management ERP/CRM & Optimización de Procesos | Latinoamérica" />
-        <meta property="og:description" content="Consultoría independiente especializada en implementación ERP/CRM (Microsoft Dynamics, SAP, NetSuite, Odoo) para empresas medianas y grandes. +25 años transformando empresas en Latinoamérica." />
-        <meta property="og:url" content="https://lucy-consulting-evdq.vercel.app" />
-        <meta property="og:site_name" content="Lucy Consulting" />
-        <meta property="og:image" content="https://lucy-consulting-evdq.vercel.app/images/lucy-consulting-home-og.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:locale" content="es_ES" />
-        
-        {/* Twitter Cards optimizado */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lucy Consulting | Project Management ERP/CRM Latinoamérica" />
-        <meta name="twitter:description" content="Consultoría independiente en implementación ERP/CRM para empresas medianas y grandes. Microsoft Dynamics, SAP, NetSuite, Odoo. +25 años de experiencia." />
-        <meta name="twitter:image" content="https://lucy-consulting-evdq.vercel.app/images/lucy-consulting-home-twitter.jpg" />
-        
-        {/* Meta adicionales para LLMs */}
-        <meta name="author" content="Lucy Consulting - Gladis Morales" />
-        <meta name="geo.region" content="GT-PA" />
-        <meta name="geo.placename" content="Guatemala, Panamá" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="target" content="Business" />
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" />
-        
-        {/* Schema Markup Organization */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </Head>
+      {/* MAIN wrapper semántico (Checklist GEO #6) */}
+      <main>
+       {/* HERO SECTION optimizado - Texto correcto según checklist */}
+<section className="relative w-full h-[85vh] flex items-center justify-center text-center overflow-hidden">
+  <div className="absolute inset-0">
+    <Image
+      src="/images/hero-crm.jpeg"
+      alt="Consultoría independiente Project Management ERP/CRM Odoo SAP NetSuite mapeo procesos Latinoamérica - Lucy Consulting Guatemala Panamá"
+      fill
+      className="object-cover opacity-40"
+      priority
+      sizes="100vw"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-[#0F1C2A]/60 via-[#0F1C2A]/50 to-[#0F1C2A]/70"></div>
+  </div>
 
-      {/* HEADER optimizado con navegación semántica */}
-      <header className="sticky top-0 z-50 w-full bg-[#0F1C2A]/90 backdrop-blur-md shadow-lg">
-        <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16" role="navigation" aria-label="Navegación principal">
-          <h1 className="text-2xl font-bold text-[#3574E3] tracking-wide">
-            <Link href="/" aria-label="Lucy Consulting - Consultoría ERP/CRM Latinoamérica">
-              Lucy Consulting
-            </Link>
-          </h1>
-
-          {/* Navegación Desktop */}
-          <div className="hidden md:flex space-x-6 text-white/90 text-sm font-medium">
-            <a href="#quienes-somos" className="hover:text-[#3574E3] transition duration-200">
-              Quiénes Somos
-            </a>
-            <a href="#servicios" className="hover:text-[#3574E3] transition duration-200">
-              Servicios
-            </a>
-            <a href="#casos-exito" className="hover:text-[#3574E3] transition duration-200">
-              Casos de Éxito
-            </a>
-            <a href="#faq" className="hover:text-[#3574E3] transition duration-200">
-              FAQ
-            </a>
-            <a href="#contacto" className="hover:text-[#3574E3] transition duration-200">
-              Contacto
-            </a>
-          </div>
-
-          {/* CTA Header */}
-          <a
-            href="https://wa.me/50245172699?text=Hola%2C%20me%20interesa%20una%20consultor%C3%ADa%20sobre%20implementaci%C3%B3n%20ERP%2FCRM"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-5 py-2 rounded-full font-semibold text-white shadow-md hover:scale-105 transition duration-200"
-            aria-label="Contactar por WhatsApp para consultoría ERP/CRM"
-          >
-            💬 WhatsApp
-          </a>
-
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-white p-2"
-            aria-label="Abrir menú móvil"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </nav>
-      </header>
-{/* HERO SECTION optimizado */}
-      <section className="relative w-full h-[85vh] flex items-center justify-center text-center overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero-crm.jpeg"
-            alt="Consultoría especializada en implementación ERP y CRM para empresas medianas y grandes en Latinoamérica - Lucy Consulting"
-            fill
-            className="object-cover opacity-40"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0F1C2A]/60 via-[#0F1C2A]/50 to-[#0F1C2A]/70"></div>
-        </div>
-
-        <div className="relative z-10 max-w-5xl px-6">
-          <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            <span className="text-[#3574E3]">Project Management ERP/CRM</span>
-            <br />
-            <span className="text-white">Microsoft Dynamics, SAP, NetSuite & Odoo</span>
-          </h2>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-  Consultoría independiente especializada en <strong>Project Management ERP/CRM</strong>, 
-  <strong>Mapeo de Procesos</strong> y <strong>Consultoría en Selección e Implementación</strong>. 
-  Microsoft Dynamics, SAP, NetSuite y Odoo. +25 años transformando empresas en Latinoamérica.
-</p>
-          
-          {/* CTAs Hero */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://wa.me/50245172699?text=Hola%2C%20necesito%20consultor%C3%ADa%20para%20implementaci%C3%B3n%20ERP%2FCRM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-8 py-4 rounded-full font-semibold text-white text-lg shadow-lg hover:scale-105 transition duration-200"
-              aria-label="Contactar por WhatsApp para consultoría ERP/CRM"
-            >
-              💬 Consultoría Gratuita por WhatsApp
-            </a>
-            <a
-              href="tel:+50245172699"
-              className="inline-flex border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0F1C2A] transition duration-200"
-              aria-label="Llamar a Lucy Consulting Guatemala"
-            >
-              📞 +502 4517 2699
-            </a>
+  <div className="relative z-10 max-w-6xl px-6">
+    {/* H1 ÚNICO optimizado con los 3 servicios completos (Checklist #2) */}
+    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+      <span className="text-[#3574E3] block mb-2">
+        Project Management ERP/CRM | Mapeo de Procesos
+      </span>
+      <span className="text-white text-2xl md:text-4xl lg:text-5xl block mb-2">
+        Consultoría Independiente en Selección e Implementación
+      </span>
+      <span className="text-[#60A5FA] text-xl md:text-3xl lg:text-4xl block">
+        Odoo, SAP, NetSuite - Latinoamérica
+      </span>
+    </h1>
+    
+    {/* Párrafo optimizado 25-50 palabras (Checklist correcto) */}
+    <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
+      Consultoría independiente en implementación ERP/CRM para empresas medianas y grandes. 
+      Especializados en <strong>Odoo, SAP, NetSuite y Microsoft Dynamics</strong> con 
+      metodologías <strong>Agile y SCRUM</strong> en Guatemala, Panamá y Latinoamérica.
+    </p>
+    
+    {/* CTAs Hero con tracking GA4/GTM (Checklist #9) */}
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a
+        href="https://wa.me/50245172699?text=Hola%2C%20necesito%20consultor%C3%ADa%20para%20implementaci%C3%B3n%20ERP%2FCRM%20en%20Latinoam%C3%A9rica"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-8 py-4 rounded-full font-semibold text-white text-lg shadow-lg hover:scale-105 transition duration-200 min-h-[44px] min-w-[44px]"
+        aria-label="Contactar por WhatsApp para consultoría Project Management ERP/CRM en Latinoamérica"
+        data-gtm-event="hero_whatsapp_click"
+        data-gtm-value="consultoria_gratuita"
+      >
+        💬 Consultoría Gratuita por WhatsApp
+      </a>
+      <a
+        href="tel:+50245172699"
+        className="inline-flex border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0F1C2A] transition duration-200 min-h-[44px] min-w-[44px]"
+        aria-label="Llamar a Lucy Consulting Guatemala para consultoría ERP/CRM"
+        data-gtm-event="hero_phone_click"
+        data-gtm-value="llamada_directa"
+      >
+        📞 +502 4517 2699
+      </a>
+    </div>
+  </div>
+</section>      
+{/* QUIÉNES SOMOS - Optimizado con keywords y checklist SEO/GEO */}
+<section id="quienes-somos" className="relative w-full py-20 bg-gradient-to-br from-white via-blue-50 to-white overflow-hidden">
+  {/* Elementos decorativos de fondo */}
+  <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+  <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
+  
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <header className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0F1C2A] relative">
+        Quiénes Somos
+        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+      </h2>
+      
+      {/* Contenido optimizado para LLMs y SEO (Checklist GEO #1) */}
+      <div className="bg-white/60 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-8 max-w-5xl mx-auto">
+        
+        <p className="text-gray-700 text-lg leading-relaxed mb-4">
+          <strong className="text-[#3574E3]">Lucy Consulting</strong> es una consultoría independiente 
+          especializada en <strong className="text-[#0F1C2A]">Project Management ERP/CRM</strong>, 
+          <strong className="text-[#0F1C2A]"> mapeo de procesos</strong> y 
+          <strong className="text-[#0F1C2A]"> asesoramiento en selección de sistemas</strong> para 
+          empresas medianas y grandes en Latinoamérica.
+        </p>
+        
+        <p className="text-gray-700 text-lg leading-relaxed">
+          Lideramos proyectos tecnológicos, optimizamos flujos de trabajo empresariales y brindamos 
+          recomendaciones neutrales sin conflictos de interés. Con sede principal en 
+          <strong className="text-[#3574E3]"> Guatemala</strong> y presencia en 
+          <strong className="text-[#3574E3]"> Panamá</strong>, acompañamos a organizaciones en toda la región.
+        </p>
+        
+      </div>
+    </header>
+  </div>
+</section>
+ {/* DIRECTORA GENERAL - Optimizado SEO/GEO */}
+<section className="relative w-full py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50 overflow-hidden">
+  {/* Elementos decorativos de fondo */}
+  <div className="absolute top-1/4 left-0 w-64 h-64 bg-gradient-to-br from-[#3574E3]/5 to-transparent rounded-full blur-2xl"></div>
+  <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/5 to-transparent rounded-full blur-2xl"></div>
+  
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <div className="grid lg:grid-cols-2 gap-12 items-center">
+      {/* Imagen con efectos */}
+      <div className="order-2 lg:order-1">
+        <div className="relative">
+          {/* Efecto de fondo detrás de la imagen */}
+          <div className="absolute -inset-4 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl"></div>
+          <div className="relative bg-white p-4 rounded-2xl shadow-2xl">
+            <Image
+              src="/images/foto-lucy.jpg"
+              alt="Gladis Morales Directora General Lucy Consulting especialista Project Management ERP CRM implementación Odoo SAP NetSuite Guatemala Panamá Centroamérica"
+              width={400}
+              height={500}
+              className="rounded-xl shadow-lg mx-auto"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
-      </section>
-      {/* QUIÉNES SOMOS - Mejorado visualmente */}
-      <section id="quienes-somos" className="relative w-full py-20 bg-gradient-to-br from-white via-blue-50 to-white overflow-hidden">
-        {/* Elementos decorativos de fondo */}
-        <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-        
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0F1C2A] relative">
-              Quiénes Somos
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+      </div>
+
+      {/* Contenido optimizado con párrafos SEO */}
+      <div className="order-1 lg:order-2">
+        <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-8">
+          <div className="mb-6">
+            {/* H2 optimizado con keywords (Checklist #2) */}
+            <h2 className="text-3xl font-bold mb-2 text-[#0F1C2A]">
+              Gladis Morales - Directora General Especialista en Project Management ERP/CRM
             </h2>
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-8 max-w-5xl mx-auto">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                <strong className="text-[#3574E3]">Lucy Consulting</strong> es una consultoría independiente especializada en 
-                <strong className="text-[#0F1C2A]"> Project Management ERP/CRM</strong>, <strong className="text-[#0F1C2A]">mapeo de procesos</strong> y 
-                <strong className="text-[#0F1C2A]"> consultoría en selección e implementación</strong> para empresas medianas y grandes en Latinoamérica.
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+              <p className="text-xl text-[#3574E3] font-semibold">
+                Fundadora Lucy Consulting
               </p>
             </div>
-          </header>
-        </div>
-      </section>
+          </div>
+          
+          {/* Contenido indexable en párrafos (Checklist #3) */}
+          <div className="space-y-6 mb-8">
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Licenciada en Administración de Sistemas de Información</strong> y 
+              <strong> Maestría en Administración de la Confiabilidad</strong>, con más de 
+              <strong> 25 años de experiencia en implementación ERP/CRM</strong> para empresas 
+              en Latinoamérica. Especialista certificada en metodologías 
+              <strong> Agile, SCRUM Foundation y Lean Six Sigma</strong>.
+            </p>
+            
+            <p className="text-gray-700 leading-relaxed">
+              Fundadora de <strong>Lucy Consulting</strong> con 5 años liderando 
+              <strong> consultoría independiente en Project Management ERP/CRM</strong>. 
+              Experiencia comprobada en implementación de <strong>Odoo, SAP, NetSuite y Microsoft Dynamics</strong> 
+              para empresas medianas y grandes en <strong>Guatemala, Panamá</strong> y Latinoamerica.
+            </p>
+            
+            <p className="text-gray-700 leading-relaxed">
+              Su enfoque de <strong>consultoría neutral</strong> garantiza decisiones objetivas en 
+              selección de sistemas, <strong>mapeo de procesos empresariales</strong> y 
+              <strong> transformación digital</strong> sin conflictos de interés comerciales.
+            </p>
+          </div>
 
-      {/* DIRECTORA GENERAL - Mejorado visualmente */}
-      <section className="relative w-full py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50 overflow-hidden">
-        {/* Elementos decorativos de fondo */}
-        <div className="absolute top-1/4 left-0 w-64 h-64 bg-gradient-to-br from-[#3574E3]/5 to-transparent rounded-full blur-2xl"></div>
-        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/5 to-transparent rounded-full blur-2xl"></div>
-        
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Imagen con efectos */}
-            <div className="order-2 lg:order-1">
-              <div className="relative">
-                {/* Efecto de fondo detrás de la imagen */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl"></div>
-                <div className="relative bg-white p-4 rounded-2xl shadow-2xl">
-                  <Image
-                    src="/images/foto-lucy.jpg"
-                    alt="Gladis Morales, Directora General y Fundadora de Lucy Consulting, especialista en implementación ERP/CRM con más de 25 años de experiencia en Latinoamérica"
-                    width={400}
-                    height={500}
-                    className="rounded-xl shadow-lg mx-auto"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Contenido con diseño mejorado */}
-            <div className="order-1 lg:order-2">
-              <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-8">
-                <div className="mb-6">
-                  <h2 className="text-3xl font-bold mb-2 text-[#0F1C2A]">
-                    Gladis Morales
-                  </h2>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
-                    <p className="text-xl text-[#3574E3] font-semibold">
-                      Directora General y Fundadora
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6 mb-8">
-                  <div className="bg-blue-50/50 rounded-xl p-4 border-l-4 border-[#3574E3]">
-                    <p className="text-gray-700 font-medium">
-                      <strong>Licenciada en Administración de Sistemas de Información</strong> y 
-                      <strong> Maestría en Administración de la Confiabilidad</strong>.
-                    </p>
-                  </div>
-                  
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="flex items-start bg-white/60 rounded-xl p-4 shadow-sm">
-                      <div className="w-3 h-3 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 text-sm">Más de <strong>25 años</strong> en implementación ERP/CRM</span>
-                    </div>
-                    <div className="flex items-start bg-white/60 rounded-xl p-4 shadow-sm">
-                      <div className="w-3 h-3 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 text-sm"><strong>6 años</strong> liderando Project Management</span>
-                    </div>
-                    <div className="flex items-start bg-white/60 rounded-xl p-4 shadow-sm">
-                      <div className="w-3 h-3 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 text-sm"><strong>5 años</strong> como consultora independiente</span>
-                    </div>
-                    <div className="flex items-start bg-white/60 rounded-xl p-4 shadow-sm">
-                      <div className="w-3 h-3 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 text-sm">Certificada en <strong>SCRUM Foundation</strong> y <strong>Lean Six Sigma</strong></span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* LinkedIn Button mejorado */}
-                <div className="flex justify-center lg:justify-start">
-                  <a
-                    href="https://www.linkedin.com/in/gladis-morales-1a891a35/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 bg-gradient-to-r from-[#0077B5] to-[#005983] hover:from-[#005983] hover:to-[#004066] text-white px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                    aria-label="Ver perfil de Gladis Morales en LinkedIn"
-                  >
-                    <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.7-2.2 3.5-2.2 3.8 0 4.5 2.5 4.5 5.7V24h-4v-8.6c0-2-.1-4.6-2.8-4.6s-3.2 2.2-3.2 4.5V24h-4V8z"/>
-                    </svg>
-                    <span className="font-semibold">Conectar en LinkedIn</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+          {/* LinkedIn Button optimizado con tracking (Checklist #9) */}
+          <div className="flex justify-center lg:justify-start">
+            <a
+              href="https://www.linkedin.com/in/gladis-morales-1a891a35/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 bg-gradient-to-r from-[#0077B5] to-[#005983] hover:from-[#005983] hover:to-[#004066] text-white px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 min-h-[44px]"
+              aria-label="Ver perfil LinkedIn Gladis Morales especialista Project Management ERP/CRM Lucy Consulting Guatemala"
+              data-gtm-event="directora_linkedin_click"
+              data-gtm-value="gladis_morales_profile"
+            >
+              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.7-2.2 3.5-2.2 3.8 0 4.5 2.5 4.5 5.7V24h-4v-8.6c0-2-.1-4.6-2.8-4.6s-3.2 2.2-3.2 4.5V24h-4V8z"/>
+              </svg>
+              <span className="font-semibold">Conectar en LinkedIn</span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
       {/* SERVICIOS */}
       <section id="servicios" className="relative w-full py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
         {/* Elementos decorativos de fondo */}
@@ -678,6 +526,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      </main> 
     </div>
   );
 }
