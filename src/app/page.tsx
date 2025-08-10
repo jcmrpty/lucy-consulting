@@ -44,7 +44,7 @@ export default function HomePage() {
     {/* CTAs Hero con tracking GA4/GTM (Checklist #9) */}
     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a
-        href="https://wa.me/50245172699?text=Hola%2C%20necesito%20consultor%C3%ADa%20para%20implementaci%C3%B3n%20ERP%2FCRM%20en%20Latinoam%C3%A9rica"
+        href="https://calendly.com/mocawebpty/30min"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-8 py-4 rounded-full font-semibold text-white text-lg shadow-lg hover:scale-105 transition duration-200 min-h-[44px] min-w-[44px]"
@@ -52,7 +52,8 @@ export default function HomePage() {
         data-gtm-event="hero_whatsapp_click"
         data-gtm-value="consultoria_gratuita"
       >
-        💬 Consultoría Gratuita por WhatsApp
+        💬 Agenda tu Consultoría Gratuita (30min)
+
       </a>
       <a
         href="tel:+50245172699"
@@ -157,7 +158,7 @@ export default function HomePage() {
               Fundadora de <strong>Lucy Consulting</strong> con 5 años liderando 
               <strong> consultoría independiente en Project Management ERP/CRM</strong>. 
               Experiencia comprobada en implementación de <strong>Odoo, SAP, NetSuite y Microsoft Dynamics</strong> 
-              para empresas medianas y grandes en <strong>Guatemala, Panamá</strong> y Latinoamerica.
+              para empresas medianas y grandes en <strong>Guatemala, Panamá</strong> y .
             </p>
             
             <p className="text-gray-700 leading-relaxed">
@@ -189,343 +190,461 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-      {/* SERVICIOS */}
-      <section id="servicios" className="relative w-full py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
-        {/* Elementos decorativos de fondo */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl"></div>
+      {/* SERVICIOS - Optimizado SEO/GEO con keywords actualizadas */}
+<section id="servicios" className="relative w-full py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
+  {/* Elementos decorativos de fondo */}
+  <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl"></div>
+  
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <header className="text-center mb-16">
+      {/* H2 optimizado con los 3 servicios (Checklist #2) */}
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white relative">
+        Project Management ERP/CRM, Mapeo de Procesos y Consultoría Independiente en Latinoamérica
+        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+      </h2>
+      
+      {/* Descripción general optimizada para LLMs (Checklist GEO #1) */}
+      <p className="text-blue-100 max-w-4xl mx-auto text-lg leading-relaxed">
+        Consultoría independiente en <strong className="text-white">sistemas ERP/CRM y mapeo de procesos</strong> 
+        para empresas medianas y grandes en Latinoamérica
+      </p>
+    </header>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+      {/* Servicio 1: Project Management ERP/CRM */}
+      <article className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-[#3574E3]/50 transition-all duration-300 hover:transform hover:scale-105">
+        <div className="relative mb-6">
+          <div className="w-full h-32 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-2xl overflow-hidden mx-auto shadow-xl group-hover:shadow-2xl transition-shadow duration-300">
+            <Image
+              src="/images/imagen-pm-servicios.jpeg"
+              alt="Project Management ERP/CRM independiente Odoo SAP NetSuite metodologías Agile SCRUM Latinoamérica Guatemala Panamá"
+              width={300}
+              height={128}
+              className="w-full h-full object-cover"
+              sizes="300px"
+            />
+          </div>
+          {/* Efecto decorativo */}
+          <div className="absolute -inset-2 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
         
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white relative">
-              Nuestros Servicios Especializados
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
-            </h2>
-            <p className="text-blue-100 max-w-4xl mx-auto text-lg leading-relaxed">
-              Consultoría independiente en <strong className="text-white">Microsoft Dynamics, SAP, NetSuite y Odoo</strong> 
-              para empresas medianas y grandes en Latinoamérica
-            </p>
-          </header>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Servicio 1: Project Management */}
-            <article className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-[#3574E3]/50 transition-all duration-300 hover:transform hover:scale-105">
-              <div className="relative mb-6">
-                <div className="w-full h-32 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-2xl overflow-hidden mx-auto shadow-xl group-hover:shadow-2xl transition-shadow duration-300">
-                  <Image
-                    src="/images/imagen-pm-servicios.jpeg"
-                    alt="Icono Project Management ERP/CRM"
-                    width={300}
-                    height={128}
-                    className="w-full h-full object-cover"
-                    sizes="300px"
-                  />
-                </div>
-                {/* Efecto decorativo */}
-                <div className="absolute -inset-2 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              
-              <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#60A5FA] transition-colors">
-                Project Management ERP/CRM
-              </h3>
-              <p className="text-blue-100 mb-6 leading-relaxed">
-                Lideramos implementaciones de <strong>Microsoft Dynamics, SAP, NetSuite y Odoo</strong> usando 
-                metodologías <strong>Agile, SCRUM y Waterfall</strong>. Garantizamos entregas exitosas sin riesgos.
-              </p>
-              <div className="text-sm text-blue-200 mb-6 bg-white/5 rounded-lg p-3">
-                <strong>Incluye:</strong> Planificación, ejecución, control de calidad, gestión de riesgos y adopción tecnológica.
-              </div>
-              <a
-                 href="/servicios/project-management-erp-crm"
-  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-6 py-3 rounded-full font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-  aria-label="Ver más sobre Project Management ERP/CRM"
->
-  📖 Ver más información →
-</a>
-            </article>
-
-            {/* Servicio 2: Mapeo de Procesos */}
-            <article className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-[#3574E3]/50 transition-all duration-300 hover:transform hover:scale-105">
-              <div className="relative mb-6">
-                <div className="w-full h-32 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-2xl overflow-hidden mx-auto shadow-xl group-hover:shadow-2xl transition-shadow duration-300">
-                  <Image
-                    src="/images/imagen-procesos-servicios.jpeg"
-                    alt="Icono Mapeo de Procesos"
-                    width={300}
-                    height={128}
-                    className="w-full h-full object-cover"
-                    sizes="300px"
-                  />
-                </div>
-                <div className="absolute -inset-2 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              
-              <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#60A5FA] transition-colors">
-                Elaboración y Mapeo de Procesos
-              </h3>
-              <p className="text-blue-100 mb-6 leading-relaxed">
-                Analizamos y optimizamos procesos de negocio usando <strong>metodologías Lean Six Sigma</strong>, 
-                reduciendo ineficiencias y alineándolos con objetivos estratégicos.
-              </p>
-              <div className="text-sm text-blue-200 mb-6 bg-white/5 rounded-lg p-3">
-                <strong>Incluye:</strong> Diagnóstico actual, mapeo AS-IS/TO-BE, identificación de mejoras y documentación.
-              </div>
-              <a
-               
-  href="/servicios/mapeo-de-procesos"
-  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-6 py-3 rounded-full font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-  aria-label="Ver más sobre Mapeo de Procesos"
->
-  📖 Ver más información →
-</a>
-            </article>
-
-            {/* Servicio 3: Consultoría Independiente */}
-            <article className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-[#3574E3]/50 transition-all duration-300 hover:transform hover:scale-105">
-              <div className="relative mb-6">
-                <div className="w-full h-32 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-2xl overflow-hidden mx-auto shadow-xl group-hover:shadow-2xl transition-shadow duration-300">
-                  <Image
-                    src="/images/imagen-erp-servicios.jpeg"
-                    alt="Icono Consultoría Independiente ERP/CRM"
-                    width={300}
-                    height={128}
-                    className="w-full h-full object-cover"
-                    sizes="300px"
-                  />
-                </div>
-                <div className="absolute -inset-2 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl opacity-opacity-300"></div>
-              </div>
-              
-              <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#60A5FA] transition-colors">
-                Consultoría en Selección e Implementación
-              </h3>
-              <p className="text-blue-100 mb-6 leading-relaxed">
-                Acompañamiento neutral en selección e implementación de <strong>sistemas ERP/CRM</strong>, 
-                garantizando decisiones objetivas sin conflictos de interés.
-              </p>
-              <div className="text-sm text-blue-200 mb-6 bg-white/5 rounded-lg p-3">
-                <strong>Incluye:</strong> Evaluación de necesidades, análisis de opciones, selección objetiva y supervisión.
-              </div>
-              <a
-               href="/servicios/consultoria-erp-crm"
-  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-6 py-3 rounded-full font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-  aria-label="Ver más sobre Consultoría Independiente"
->
-  📖 Ver más información →
-</a>
-            </article>
-          </div>
-        </div>
-      </section>
-      {/* MÉTRICAS */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50 overflow-hidden">
-        <div className="absolute top-1/4 left-0 w-64 h-64 bg-gradient-to-br from-[#3574E3]/5 to-transparent rounded-full blur-2xl"></div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <header className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-[#0F1C2A] relative">
-              Nuestros Resultados en Números
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">Métricas reales de nuestras implementaciones ERP/CRM en empresas de Latinoamérica</p>
-          </header>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
-              <div className="text-5xl font-bold text-[#3574E3] mb-3">25+</div>
-              <h3 className="font-semibold text-[#0F1C2A] mb-2">Años de Experiencia</h3>
-              <p className="text-sm text-gray-600">En implementación ERP/CRM para empresas de Latinoamérica</p>
-            </div>
-            <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
-              <div className="text-5xl font-bold text-[#3574E3] mb-3">92%</div>
-              <h3 className="font-semibold text-[#0F1C2A] mb-2">Cumplimiento</h3>
-              <p className="text-sm text-gray-600">Proyectos entregados on-time y en presupuesto</p>
-            </div>
-            <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
-              <div className="text-5xl font-bold text-[#3574E3] mb-3">88%</div>
-              <h3 className="font-semibold text-[#0F1C2A] mb-2">Adopción</h3>
-              <p className="text-sm text-gray-600">Alta adopción usuaria post-implementación</p>
-            </div>
-            <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
-              <div className="text-5xl font-bold text-[#3574E3] mb-3">100%</div>
-              <h3 className="font-semibold text-[#0F1C2A] mb-2">Independiente</h3>
-              <p className="text-sm text-gray-600">Consultoría neutral sin conflictos de interés</p>
-            </div>
-          </div>
-        </div>
-      </section>
-     {/* FAQ */}
-      <section id="faq" className="py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl"></div>
+        {/* H3 optimizado (Checklist #2) */}
+        <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#60A5FA] transition-colors">
+          Project Management ERP/CRM
+        </h3>
         
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white relative">
-              Preguntas Frecuentes
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
-            </h2>
-            <p className="text-blue-100 text-lg">Resolvemos las dudas más comunes sobre implementaciones ERP/CRM y nuestros servicios</p>
-          </header>
-
-          <div className="space-y-4">
-            <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
-              <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
-                ¿Qué sistemas ERP y CRM implementa Lucy Consulting?
-              </summary>
-              <div className="px-6 pb-6 text-blue-100 leading-relaxed">
-                Implementamos <strong className="text-white">Microsoft Dynamics, SAP, NetSuite y Odoo</strong> (ERP y CRM). Somos consultores independientes sin vínculos comerciales, garantizando decisiones objetivas basadas únicamente en las necesidades de su empresa.
-              </div>
-            </details>
-
-            <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
-              <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
-                ¿Cuánto tiempo toma una implementación ERP/CRM?
-              </summary>
-              <div className="px-6 pb-6 text-blue-100 leading-relaxed">
-                Las implementaciones varían entre <strong className="text-white">6-18 meses</strong> dependiendo del tamaño de la empresa y complejidad. Usamos metodologías <strong className="text-white">Agile y SCRUM</strong> para entregas incrementales y control de riesgos.
-              </div>
-            </details>
-
-            <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
-              <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
-                ¿Trabajan con empresas fuera de Guatemala?
-              </summary>
-              <div className="px-6 pb-6 text-blue-100 leading-relaxed">
-                Sí, atendemos empresas en toda <strong className="text-white">Latinoamérica</strong>. Presencia principal en <strong className="text-white">Guatemala</strong>, secundaria en <strong className="text-white">Panamá</strong>, y experiencia trabajando remotamente con empresas de toda la región.
-              </div>
-            </details>
-
-            <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
-              <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
-                ¿Qué metodologías de Project Management utilizan?
-              </summary>
-              <div className="px-6 pb-6 text-blue-100 leading-relaxed">
-                Utilizamos <strong className="text-white">Agile, SCRUM y Waterfall</strong> según las necesidades del proyecto. Certificados en <strong className="text-white">SCRUM Foundation</strong> y aplicamos principios <strong className="text-white">Lean Six Sigma</strong> para optimización.
-              </div>
-            </details>
-
-            <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
-              <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
-                ¿Qué incluye la consultoría independiente?
-              </summary>
-              <div className="px-6 pb-6 text-blue-100 leading-relaxed">
-                Incluye <strong className="text-white">análisis de necesidades, evaluación de opciones, selección objetiva, acompañamiento en implementación, gestión del cambio y soporte post-implementación</strong>. Todo sin conflictos de interés comerciales.
-              </div>
-            </details>
-          </div>
+        {/* Contenido optimizado para GEO (Checklist GEO #1) */}
+        <p className="text-blue-100 mb-6 leading-relaxed">
+          Ofrecemos servicios independientes de <strong>Project Management para implementaciones ERP/CRM</strong> usando 
+          metodologías <strong>Agile, SCRUM y Waterfall</strong>. Lideramos y coordinamos proyectos de 
+          <strong> Odoo, SAP, NetSuite y Microsoft Dynamics</strong>, garantizando entregas exitosas sin riesgos 
+          para empresas en Guatemala, Panamá y toda Latinoamérica.
+        </p>
+        
+        <div className="text-sm text-blue-200 mb-6 bg-white/5 rounded-lg p-3">
+          <strong>Incluye:</strong> Planificación, coordinación, control de calidad, gestión de riesgos y supervisión de adopción tecnológica.
         </div>
-      </section>
-     {/* CONTACTO */}
-      <section id="contacto" className="py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50 text-gray-800">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0F1C2A] relative">
-            ¿Listo para transformar tu empresa con ERP/CRM?
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-            Agenda una <strong>consultoría gratuita</strong> y descubre cómo podemos acompañarte hacia el éxito en tu próximo proyecto de <strong>implementación ERP/CRM</strong>.
-          </p>
+        
+        {/* CTA con tracking optimizado (Checklist #9) */}
+        <a
+          href="/servicios/project-management-erp-crm"
+          className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-6 py-3 rounded-full font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 min-h-[44px]"
+          aria-label="Ver más información sobre Project Management ERP/CRM independiente"
+          data-gtm-event="servicio_pm_click"
+          data-gtm-value="project_management_erp_crm"
+        >
+          📖 Ver más información →
+        </a>
+      </article>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
-              <h3 className="font-semibold text-[#3574E3] mb-2">WhatsApp</h3>
-              <a href="https://wa.me/50245172699" target="_blank" rel="noopener noreferrer" className="text-lg hover:text-[#3574E3] transition">+502 4517 2699</a>
-            </div>
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
-              <h3 className="font-semibold text-[#3574E3] mb-2">Email</h3>
-              <a href="mailto:lucyconsultinggt@gmail.com" className="text-lg hover:text-[#3574E3] transition">lucyconsultinggt@gmail.com</a>
-            </div>
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
-              <h3 className="font-semibold text-[#3574E3] mb-2">Cobertura</h3>
-              <p className="text-lg">Guatemala - Panamá</p>
-              <p className="text-sm text-gray-600">Servicios en Latinoamérica</p>
-            </div>
+      {/* Servicio 2: Mapeo de Procesos */}
+      <article className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-[#3574E3]/50 transition-all duration-300 hover:transform hover:scale-105">
+        <div className="relative mb-6">
+          <div className="w-full h-32 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-2xl overflow-hidden mx-auto shadow-xl group-hover:shadow-2xl transition-shadow duration-300">
+            <Image
+              src="/images/imagen-procesos-servicios.jpeg"
+              alt="Mapeo procesos empresariales optimización Lean Six Sigma organizaciones Latinoamérica Guatemala Panamá"
+              width={300}
+              height={128}
+              className="w-full h-full object-cover"
+              sizes="300px"
+            />
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="https://wa.me/50245172699?text=Hola%2C%20necesito%20una%20consultoría%20gratuita%20para%20implementación%20ERP%2FCRM" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-8 py-4 rounded-full font-semibold text-white shadow-lg hover:scale-105 transition"
-            >
-              💬 Consultoría Gratuita por WhatsApp
-            </a>
-            <a 
-              href="tel:+50245172699" 
-              className="inline-flex border-2 border-[#3574E3] text-[#3574E3] px-6 py-3 rounded-full font-semibold hover:bg-[#3574E3] hover:text-white transition"
-            >
-              📞 +502 4517 2699
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/gladis-morales-1a891a35/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-flex border-2 border-[#0077B5] text-[#0077B5] px-6 py-3 rounded-full font-semibold hover:bg-[#0077B5] hover:text-white transition"
-            >
-              🔗 LinkedIn
-            </a>
-          </div>
+          <div className="absolute -inset-2 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="bg-[#0F1C2A] text-white py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold text-[#3574E3] mb-4">Lucy Consulting</h3>
-              <p className="text-blue-100 mb-4 leading-relaxed">
-                Consultoría independiente especializada en Project Management ERP/CRM para empresas medianas y grandes en Latinoamérica. +25 años de experiencia.
-              </p>
-              <div className="flex space-x-4">
-                <a 
-                  href="https://www.linkedin.com/in/gladis-morales-1a891a35/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-200 hover:text-white transition"
-                >
-                  LinkedIn
-                </a>
-                <a 
-                  href="https://wa.me/50245172699" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-200 hover:text-white transition"
-                >
-                  WhatsApp
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Servicios</h4>
-              <ul className="space-y-2 text-blue-200">
-                <li><a href="/servicios/project-management-erp-crm" className="hover:text-white transition">Project Management ERP/CRM</a></li>
-                <li><a href="/servicios/mapeo-de-procesos" className="hover:text-white transition">Mapeo de Procesos</a></li>
-                <li><a href="/servicios/consultoria-erp-crm" className="hover:text-white transition">Consultoría Independiente</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-white">Contacto</h4>
-              <div className="space-y-2 text-blue-200">
-                <p>📞 <a href="tel:+50245172699" className="hover:text-white transition">+502 4517 2699</a></p>
-                <p>✉️ <a href="mailto:lucyconsultinggt@gmail.com" className="hover:text-white transition">lucyconsultinggt@gmail.com</a></p>
-                <p>📍 Guatemala - Panamá</p>
-                <p>🌎 Servicios en Latinoamérica</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/20 pt-8 text-center">
-            <p className="text-blue-100">
-              © 2024 Lucy Consulting. Especialistas en Project Management ERP/CRM (Microsoft Dynamics, SAP, NetSuite, Odoo) 
-              para empresas en Latinoamérica. Consultoría independiente con +25 años de experiencia.
-            </p>
-          </div>
+        
+        <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#60A5FA] transition-colors">
+          Mapeo de Procesos Empresariales
+        </h3>
+        
+        <p className="text-blue-100 mb-6 leading-relaxed">
+          Analizamos y optimizamos <strong>procesos de negocio</strong> usando 
+          <strong> metodologías Lean Six Sigma</strong>, reduciendo ineficiencias y alineándolos con 
+          objetivos estratégicos en organizaciones latinoamericanas.
+        </p>
+        
+        <div className="text-sm text-blue-200 mb-6 bg-white/5 rounded-lg p-3">
+          <strong>Incluye:</strong> Diagnóstico actual, mapeo AS-IS/TO-BE, identificación de mejoras y documentación de procesos.
         </div>
-      </footer>
+        
+        <a
+          href="/servicios/mapeo-de-procesos"
+          className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-6 py-3 rounded-full font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 min-h-[44px]"
+          aria-label="Ver más información sobre Mapeo de Procesos Empresariales"
+          data-gtm-event="servicio_mapeo_click"
+          data-gtm-value="mapeo_procesos"
+        >
+          📖 Ver más información →
+        </a>
+      </article>
+
+      {/* Servicio 3: Consultoría Independiente */}
+      <article className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-[#3574E3]/50 transition-all duration-300 hover:transform hover:scale-105">
+        <div className="relative mb-6">
+          <div className="w-full h-32 bg-gradient-to-br from-[#3574E3] to-[#60A5FA] rounded-2xl overflow-hidden mx-auto shadow-xl group-hover:shadow-2xl transition-shadow duration-300">
+            <Image
+              src="/images/imagen-erp-servicios.jpeg"
+              alt="Consultoría independiente selección implementación sistemas ERP CRM neutral sin conflictos interés"
+              width={300}
+              height={128}
+              className="w-full h-full object-cover"
+              sizes="300px"
+            />
+          </div>
+          <div className="absolute -inset-2 bg-gradient-to-br from-[#3574E3]/20 to-[#60A5FA]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+        
+        <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#60A5FA] transition-colors">
+          Consultoría Independiente en Selección e Implementación
+        </h3>
+        
+        <p className="text-blue-100 mb-6 leading-relaxed">
+          <strong>Acompañamiento neutral</strong> en selección e implementación de 
+          <strong> sistemas ERP/CRM</strong>, garantizando decisiones objetivas 
+          <strong> sin conflictos de interés comerciales</strong>.
+        </p>
+        
+        <div className="text-sm text-blue-200 mb-6 bg-white/5 rounded-lg p-3">
+          <strong>Incluye:</strong> Evaluación de necesidades, análisis de opciones, selección objetiva y supervisión de implementación.
+        </div>
+        
+        <a
+          href="/servicios/consultoria-erp-crm"
+          className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-6 py-3 rounded-full font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 min-h-[44px]"
+          aria-label="Ver más información sobre Consultoría Independiente ERP/CRM"
+          data-gtm-event="servicio_consultoria_click"
+          data-gtm-value="consultoria_independiente"
+        >
+          📖 Ver más información →
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+     {/* MÉTRICAS - Versión limpia con H2 simple */}
+<section className="py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50 overflow-hidden">
+  <div className="absolute top-1/4 left-0 w-64 h-64 bg-gradient-to-br from-[#3574E3]/5 to-transparent rounded-full blur-2xl"></div>
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <header className="text-center mb-12">
+      {/* H2 simple y limpio */}
+      <h2 className="text-3xl font-bold mb-4 text-[#0F1C2A] relative">
+        Nuestros Resultados en Números
+        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+      </h2>
+    </header>
+    
+    <div className="grid md:grid-cols-4 gap-6">
+      <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
+        <div className="text-5xl font-bold text-[#3574E3] mb-3">25+</div>
+        <h3 className="font-semibold text-[#0F1C2A] mb-2">Años de Experiencia</h3>
+        <p className="text-sm text-gray-600">En implementación ERP/CRM para empresas de Latinoamérica</p>
+      </div>
+      <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
+        <div className="text-5xl font-bold text-[#3574E3] mb-3">92%</div>
+        <h3 className="font-semibold text-[#0F1C2A] mb-2">Cumplimiento</h3>
+        <p className="text-sm text-gray-600">Proyectos entregados on-time y en presupuesto</p>
+      </div>
+      <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
+        <div className="text-5xl font-bold text-[#3574E3] mb-3">88%</div>
+        <h3 className="font-semibold text-[#0F1C2A] mb-2">Adopción</h3>
+        <p className="text-sm text-gray-600">Alta adopción usuaria post-implementación</p>
+      </div>
+      <div className="text-center p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 hover:transform hover:scale-105 transition-all duration-300">
+        <div className="text-5xl font-bold text-[#3574E3] mb-3">100%</div>
+        <h3 className="font-semibold text-[#0F1C2A] mb-2">Independiente</h3>
+        <p className="text-sm text-gray-600">Consultoría neutral sin conflictos de interés</p>
+      </div>
+    </div>
+  </div>
+</section>
+     {/* FAQ - Optimizado SEO/GEO con Schema FAQPage */}
+<section id="faq" className="py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
+  <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl"></div>
+  
+  <div className="max-w-4xl mx-auto px-6 relative z-10">
+    <header className="text-center mb-16">
+      {/* H2 optimizado con keywords (Checklist #2) */}
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white relative">
+        Preguntas Frecuentes sobre Project Management ERP/CRM Latinoamérica
+        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+      </h2>
+      <p className="text-blue-100 text-lg">Resolvemos las dudas más comunes sobre implementaciones ERP/CRM y nuestros servicios</p>
+    </header>
+
+    <div className="space-y-4">
+      {/* Pregunta 1 */}
+      <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
+        <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
+          ¿Qué sistemas ERP implementa Lucy Consulting en Guatemala y Panamá?
+        </summary>
+        <div className="px-6 pb-6 text-blue-100 leading-relaxed">
+          Especializamos en <strong className="text-white">Project Management para implementaciones de Odoo, SAP, NetSuite y Microsoft Dynamics</strong> (ERP y CRM). Somos consultores independientes sin vínculos comerciales, garantizando decisiones objetivas basadas únicamente en las necesidades de su empresa en <strong className="text-white">Guatemala, Panamá y Latinoamérica</strong>.
+        </div>
+      </details>
+
+      {/* Pregunta 2 */}
+      <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
+        <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
+          ¿Cuánto tiempo toma una implementación ERP/CRM en Latinoamérica?
+        </summary>
+        <div className="px-6 pb-6 text-blue-100 leading-relaxed">
+          Las implementaciones varían entre <strong className="text-white">6-18 meses</strong> dependiendo del tamaño de la empresa y complejidad del proyecto. Usamos metodologías <strong className="text-white">Agile y SCRUM</strong> para entregas incrementales y control de riesgos en organizaciones de <strong className="text-white">Guatemala, Panamá y toda Centroamérica</strong>.
+        </div>
+      </details>
+
+      {/* Pregunta 3 */}
+      <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
+        <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
+          ¿Ofrecen servicios de mapeo de procesos empresariales?
+        </summary>
+        <div className="px-6 pb-6 text-blue-100 leading-relaxed">
+          Sí, especializamos en <strong className="text-white">mapeo y optimización de procesos empresariales</strong> usando metodologías <strong className="text-white">Lean Six Sigma</strong>. Analizamos flujos de trabajo actuales, identificamos ineficiencias y diseñamos procesos optimizados para empresas en <strong className="text-white">Guatemala, Panamá y Latinoamérica</strong>.
+        </div>
+      </details>
+
+      {/* Pregunta 4 */}
+      <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
+        <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
+          ¿Ofrecen servicios de consultoría independiente en Latinoamérica?
+        </summary>
+        <div className="px-6 pb-6 text-blue-100 leading-relaxed">
+          Sí, atendemos empresas en toda <strong className="text-white">Latinoamérica</strong>. Tenemos presencia principal en <strong className="text-white">Guatemala</strong>, secundaria en <strong className="text-white">Panamá</strong>, y experiencia trabajando remotamente con organizaciones de toda la región centroamericana.
+        </div>
+      </details>
+
+      {/* Pregunta 5 */}
+      <details className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden group hover:bg-white/15 hover:border-[#3574E3]/50 transition-all">
+        <summary className="p-6 cursor-pointer font-semibold text-white text-lg hover:text-[#60A5FA] transition">
+          ¿Qué incluye su consultoría independiente en selección de sistemas ERP/CRM?
+        </summary>
+        <div className="px-6 pb-6 text-blue-100 leading-relaxed">
+          Incluye <strong className="text-white">análisis de necesidades, evaluación de opciones, selección objetiva, acompañamiento en implementación, gestión del cambio y soporte post-implementación</strong>. Todo sin conflictos de interés comerciales, garantizando neutralidad completa.
+        </div>
+      </details>
+    </div>
+  </div>
+
+  {/* Schema FAQPage para SEO (Checklist GEO #2) */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué sistemas ERP implementa Lucy Consulting en Guatemala y Panamá?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Especializamos en Project Management para implementaciones de Odoo, SAP, NetSuite y Microsoft Dynamics (ERP y CRM). Somos consultores independientes sin vínculos comerciales, garantizando decisiones objetivas basadas únicamente en las necesidades de su empresa en Guatemala, Panamá y Latinoamérica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo toma una implementación ERP/CRM en Latinoamérica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las implementaciones varían entre 6-18 meses dependiendo del tamaño de la empresa y complejidad del proyecto. Usamos metodologías Agile y SCRUM para entregas incrementales y control de riesgos en organizaciones de Guatemala, Panamá y toda Centroamérica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Ofrecen servicios de mapeo de procesos empresariales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, especializamos en mapeo y optimización de procesos empresariales usando metodologías Lean Six Sigma. Analizamos flujos de trabajo actuales, identificamos ineficiencias y diseñamos procesos optimizados para empresas en Guatemala, Panamá y Latinoamérica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Ofrecen servicios de consultoría independiente en Latinoamérica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, atendemos empresas en toda Latinoamérica. Tenemos presencia principal en Guatemala, secundaria en Panamá, y experiencia trabajando remotamente con organizaciones de toda la región centroamericana."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye su consultoría independiente en selección de sistemas ERP/CRM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Incluye análisis de necesidades, evaluación de opciones, selección objetiva, acompañamiento en implementación, gestión del cambio y soporte post-implementación. Todo sin conflictos de interés comerciales, garantizando neutralidad completa."
+            }
+          }
+        ]
+      })
+    }}
+  />
+</section>
+     {/* CONTACTO - Balance conversión + SEO con Schema LocalBusiness */}
+<section id="contacto" className="py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50 text-gray-800">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    {/* H2 balanceado conversión + SEO (Checklist #2) */}
+    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0F1C2A] relative">
+      ¿Listo para optimizar tu empresa con consultoría ERP/CRM independiente?
+      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
+    </h2>
+    
+    {/* Párrafo optimizado para conversión + keywords mínimas */}
+    <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+      Agenda una <strong>consultoría gratuita</strong> y descubre cómo nuestros servicios de 
+      <strong> Project Management ERP/CRM, mapeo de procesos y selección independiente</strong> pueden 
+      transformar tu organización.
+    </p>
+
+    {/* Datos de contacto con información para LLMs (Checklist GEO #4) */}
+    <div className="grid md:grid-cols-3 gap-6 mb-8">
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
+        <h3 className="font-semibold text-[#3574E3] mb-2">WhatsApp</h3>
+        <a 
+          href="https://wa.me/50245172699" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-lg hover:text-[#3574E3] transition"
+          aria-label="Contactar Lucy Consulting por WhatsApp para consultoría ERP/CRM"
+          data-gtm-event="contacto_whatsapp_click"
+          data-gtm-value="whatsapp_directo"
+        >
+          +502 4517 2699
+        </a>
+      </div>
+      
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
+        <h3 className="font-semibold text-[#3574E3] mb-2">Email</h3>
+        <a 
+  href="mailto:lucyconsultinggt@gmail.com" 
+  className="text-sm hover:text-[#3574E3] transition break-words"
+          aria-label="Enviar email a Lucy Consulting para consultoría Project Management ERP/CRM"
+          data-gtm-event="contacto_email_click"
+          data-gtm-value="email_directo"
+        >
+          lucyconsultinggt@gmail.com
+        </a>
+      </div>
+      
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
+        <h3 className="font-semibold text-[#3574E3] mb-2">Cobertura</h3>
+        <p className="text-lg">Guatemala - Panamá</p>
+        <p className="text-sm text-gray-600">Servicios en Latinoamérica</p>
+      </div>
+    </div>
+
+    {/* CTAs principales con tracking optimizado (Checklist #9) */}
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href="https://calendly.com/mocawebpty/30min"
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-8 py-4 rounded-full font-semibold text-white shadow-lg hover:scale-105 transition min-h-[44px]"
+        aria-label="Solicitar consultoría gratuita Project Management ERP/CRM por WhatsApp"
+        data-gtm-event="contacto_cta_principal"
+        data-gtm-value="consultoria_gratuita_whatsapp"
+      >
+        📅 Agenda tu consultoria gratuita (30min)
+      </a>
+      
+      <a 
+        href="tel:+50245172699" 
+        className="inline-flex border-2 border-[#3574E3] text-[#3574E3] px-6 py-3 rounded-full font-semibold hover:bg-[#3574E3] hover:text-white transition min-h-[44px]"
+        aria-label="Llamar a Lucy Consulting Guatemala para consultoría ERP/CRM"
+        data-gtm-event="contacto_telefono_click"
+        data-gtm-value="llamada_directa"
+      >
+        📞 +502 4517 2699
+      </a>
+      
+      <a 
+        href="https://www.linkedin.com/in/gladis-morales-1a891a35/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="inline-flex border-2 border-[#0077B5] text-[#0077B5] px-6 py-3 rounded-full font-semibold hover:bg-[#0077B5] hover:text-white transition min-h-[44px]"
+        aria-label="Conectar con Gladis Morales en LinkedIn - Especialista Project Management ERP/CRM"
+        data-gtm-event="contacto_linkedin_click"
+        data-gtm-value="linkedin_gladis_morales"
+      >
+        🔗 LinkedIn
+      </a>
+    </div>
+  </div>
+
+  {/* Schema LocalBusiness para SEO técnico (Checklist GEO #2) */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://lucy-consulting-evdq.vercel.app/#localbusiness",
+        "name": "Lucy Consulting",
+        "description": "Consultoría independiente especializada en Project Management ERP/CRM, mapeo de procesos y selección de sistemas para empresas en Guatemala, Panamá y Latinoamérica.",
+        "url": "https://lucy-consulting-evdq.vercel.app",
+        "telephone": "+502-4517-2699",
+        "email": "lucyconsultinggt@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": ["GT", "PA"],
+          "addressRegion": ["Guatemala", "Panamá"],
+          "addressLocality": "Guatemala, Panamá"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Guatemala"
+          },
+          {
+            "@type": "Country",
+            "name": "Panamá"
+          },
+          {
+            "@type": "Place",
+            "name": "Latinoamérica"
+          }
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Gladis Morales",
+          "jobTitle": "Directora General y Fundadora"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/gladis-morales-1a891a35/"
+        ],
+        "serviceType": [
+          "Project Management ERP/CRM",
+          "Mapeo de Procesos Empresariales", 
+          "Consultoría Independiente en Selección e Implementación"
+        ],
+        "knowsAbout": [
+          "Odoo ERP", "SAP ERP", "NetSuite ERP", "Microsoft Dynamics ERP",
+          "Project Management", "Business Process Mapping", "ERP Implementation"
+        ]
+      })
+    }}
+  />
+</section>
+     
       </main> 
     </div>
   );

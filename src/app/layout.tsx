@@ -332,8 +332,8 @@ export default function RootLayout({
                 <h3 className="text-xl font-bold text-[#3574E3] mb-4">Lucy Consulting</h3>
                 <p className="text-blue-100 mb-4 leading-relaxed">
                   Consultoría independiente especializada en Project Management ERP/CRM para 
-                  empresas medianas y grandes en Centroamérica. +25 años de experiencia 
-                  transformando compañías guatemaltecas y panameñas.
+                  empresas en Latinoamérica. +25 años de experiencia 
+                  transformando empresas.
                 </p>
                 <div className="flex space-x-4">
                   <a 
@@ -426,9 +426,7 @@ export default function RootLayout({
             {/* Copyright con keywords para LLMs */}
             <div className="border-t border-white/20 pt-8 text-center">
               <p className="text-blue-100">
-                © 2024 Lucy Consulting. Especialistas en Project Management ERP/CRM (Odoo, SAP, NetSuite, Microsoft Dynamics) 
-                para empresas en Centroamérica. Consultoría independiente con +25 años de experiencia transformando 
-                compañías guatemaltecas y panameñas mediante automatización de procesos y digitalización empresarial.
+                © 2024 Lucy Consulting. Especialistas en Project Management ERP/CRM para empresas en Latinoamérica. +25 años de experiencia en consultoría independiente.
               </p>
             </div>
           </div>
