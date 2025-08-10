@@ -101,17 +101,9 @@ export default function ProjectManagementPage() {
                 data-gtm-event="pm_hero_calendly_click"
                 data-gtm-value="consultoria_pm_gratuita"
               >
-                📅 Consultoría Project Management Gratuita
+                📅 Agenda cita exploratoria gratuita (30min)
               </a>
-              <a
-                href="tel:+50245172699"
-                className="inline-flex border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0F1C2A] transition duration-200 min-h-[44px] min-w-[44px]"
-                aria-label="Llamar Lucy Consulting para Project Management ERP/CRM"
-                data-gtm-event="pm_hero_phone_click"
-                data-gtm-value="llamada_pm_directa"
-              >
-                📞 +502 4517 2699
-              </a>
+            
             </div>
           </div>
         </section>
@@ -544,17 +536,7 @@ export default function ProjectManagementPage() {
         data-gtm-event="pm_cta_principal"
         data-gtm-value="consultoria_gratuita_pm"
       >
-        📅 Agenda tu consultoría gratuita (30min)
-      </a>
-      
-      <a 
-        href="tel:+50245172699" 
-        className="inline-flex border-2 border-[#3574E3] text-[#3574E3] px-6 py-3 rounded-full font-semibold hover:bg-[#3574E3] hover:text-white transition min-h-[44px] justify-center items-center"
-        aria-label="Llamar a Lucy Consulting para Project Management ERP/CRM"
-        data-gtm-event="pm_contacto_telefono_click"
-        data-gtm-value="llamada_pm_directa"
-      >
-        📞 +502 4517 2699
+        📅 Agenda cita exploratoria gratuita (30min)
       </a>
       
       <a 
