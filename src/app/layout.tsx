@@ -86,12 +86,7 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   
-  // Viewport está incluido por defecto en Next.js 15
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
+
   
   // Meta para geo-targeting (Checklist GEO)
   other: {
@@ -333,7 +328,7 @@ export default function RootLayout({
                 <p className="text-blue-100 mb-4 leading-relaxed">
                   Consultoría independiente especializada en Project Management ERP/CRM para 
                   empresas en Latinoamérica. +25 años de experiencia 
-                  transformando empresas.
+                  transformando empresas.f
                 </p>
                 <div className="flex space-x-4">
                   <a 
