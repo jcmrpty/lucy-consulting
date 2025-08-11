@@ -65,7 +65,7 @@ export default function HomePage() {
   <div className="max-w-7xl mx-auto px-6 relative z-10">
     <header className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0F1C2A] relative">
-        Quiénes Somos
+  Consultoría Project Management ERP/CRM
         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
       </h2>
       
@@ -189,14 +189,14 @@ export default function HomePage() {
     <header className="text-center mb-16">
       {/* H2 optimizado con los 3 servicios (Checklist #2) */}
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white relative">
-        Project Management ERP/CRM, Mapeo de Procesos y Consultoría Independiente en Latinoamérica
+        Project Management ERP/CRM y Mapeo de Procesos - Guatemala Panamá
         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
       </h2>
       
       {/* Descripción general optimizada para LLMs (Checklist GEO #1) */}
       <p className="text-blue-100 max-w-4xl mx-auto text-lg leading-relaxed">
         Consultoría independiente en <strong className="text-white">sistemas ERP/CRM y mapeo de procesos</strong> 
-        para empresas medianas y grandes en Latinoamérica
+        para empresas en Guatemala y Panamá.
       </p>
     </header>
 
@@ -376,7 +376,7 @@ export default function HomePage() {
     <header className="text-center mb-16">
       {/* H2 optimizado con keywords (Checklist #2) */}
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white relative">
-        Preguntas Frecuentes sobre Project Management ERP/CRM Latinoamérica
+        Preguntas Frecuentes sobre Project Management ERP/CRM Guatemala - Panamá
         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3574E3] to-[#60A5FA] rounded-full"></div>
       </h2>
       <p className="text-blue-100 text-lg">Resolvemos las dudas más comunes sobre implementaciones ERP/CRM y nuestros servicios</p>
