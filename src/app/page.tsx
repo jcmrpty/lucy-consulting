@@ -30,17 +30,14 @@ export default function HomePage() {
         Consultoría Independiente en Selección e Implementación
       </span>
       <span className="text-[#60A5FA] text-xl md:text-3xl lg:text-4xl block">
-        Odoo, SAP, NetSuite - Latinoamérica
       </span>
     </h1>
     
-    {/* Párrafo optimizado 25-50 palabras (Checklist correcto) */}
-    <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-      Consultoría independiente en implementación ERP/CRM para empresas medianas y grandes. 
-      Especializados en <strong>Odoo, SAP, NetSuite y Microsoft Dynamics</strong> con 
-      metodologías <strong>Agile y SCRUM</strong> en Guatemala, Panamá y Latinoamérica.
-    </p>
-    
+   {/* Párrafo optimizado y conciso */}
+<p className="text-lg md:text-xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
+  Especialistas en <strong>project management ERP/CRM</strong> y <strong>mapeo de procesos</strong>. 
+  Metodologías <strong>Agile y SCRUM</strong> con +25 años de experiencia.
+</p>
     {/* CTAs Hero con tracking GA4/GTM (Checklist #9) */}
     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a

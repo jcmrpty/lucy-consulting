@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 // ✅ METADATA API NEXT.JS 15 - Aplicando checklist SEO completo
 export const metadata: Metadata = {
   // Meta básicos optimizados (Checklist #1)
-  title: 'Project Management ERP/CRM | Consultoría Independiente Guatemala Centroamérica',
+  title: 'Project Management ERP/CRM | Guatemala Panamá',
   description: 'Consultoría independiente ERP/CRM en Centroamérica. Implementación Odoo, SAP, NetSuite en Guatemala y Panamá. +25 años experiencia transformando empresas.',
   
   // Keywords estratégicas
