@@ -222,7 +222,7 @@ export default function ProjectManagementPage() {
   </div>
 </section>
 {/* ✅ SECCIÓN 4: CASOS DE ÉXITO - COMPLETADA */}
-<section className="py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
+<section id="casos-exito" className="py-20 bg-gradient-to-br from-[#0F1C2A] via-[#1a2332] to-[#0F1C2A] text-white overflow-hidden">
   {/* Elementos decorativos de fondo */}
   <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl"></div>
   <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl"></div>
@@ -347,7 +347,7 @@ export default function ProjectManagementPage() {
   </div>
 </section>
 {/* ✅ SECCIÓN 5: FAQ - COMPLETADA */}
-<section className="py-20 bg-gradient-to-br from-white via-blue-50 to-white overflow-hidden">
+<section id="faq" className="py-20 bg-gradient-to-br from-white via-blue-50 to-white overflow-hidden">
   {/* Elementos decorativos de fondo */}
   <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-[#3574E3]/10 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
   <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#60A5FA]/10 to-transparent rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>

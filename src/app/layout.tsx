@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Link from 'next/link'
+import SmartHeader from './components/SmartHeader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -85,9 +85,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
-  
 
-  
   // Meta para geo-targeting (Checklist GEO)
   other: {
     'geo.region': 'GT-PA',
@@ -232,86 +230,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.linkedin.com" />
       </head>
       <body className={`${inter.className} antialiased`}>
-        {/* HEADER con navegación semántica (Checklist GEO #6) */}
-        <header className="sticky top-0 z-50 w-full bg-[#0F1C2A]/90 backdrop-blur-md shadow-lg">
-          <nav 
-            className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16" 
-            role="navigation" 
-            aria-label="Navegación principal"
-          >
-            {/* Logo/H1 solo en home, aquí es simple link */}
-            <div className="text-2xl font-bold text-[#3574E3] tracking-wide">
-              <Link 
-                href="/" 
-                aria-label="Lucy Consulting - Consultoría independiente Project Management ERP/CRM Centroamérica"
-              >
-                Lucy Consulting
-              </Link>
-            </div>
-
-            {/* Navegación Desktop con enlaces semánticos */}
-            <div className="hidden md:flex space-x-6 text-white/90 text-sm font-medium">
-              <a 
-                href="#quienes-somos" 
-                className="hover:text-[#3574E3] transition duration-200"
-                aria-label="Información sobre Lucy Consulting"
-              >
-                Quiénes Somos
-              </a>
-              <a 
-                href="#servicios" 
-                className="hover:text-[#3574E3] transition duration-200"
-                aria-label="Servicios de Project Management ERP/CRM"
-              >
-                Servicios
-              </a>
-              <a 
-                href="#casos-exito" 
-                className="hover:text-[#3574E3] transition duration-200"
-                aria-label="Casos de éxito en implementación ERP/CRM"
-              >
-                Casos de Éxito
-              </a>
-              <a 
-                href="#faq" 
-                className="hover:text-[#3574E3] transition duration-200"
-                aria-label="Preguntas frecuentes sobre consultoría ERP/CRM"
-              >
-                FAQ
-              </a>
-              <a 
-                href="#contacto" 
-                className="hover:text-[#3574E3] transition duration-200"
-                aria-label="Contactar para consultoría en Guatemala y Panamá"
-              >
-                Contacto
-              </a>
-            </div>
-
-            {/* CTA Header con tracking (Checklist #9) */}
-            <a
-              href="https://wa.me/50245172699?text=Hola%2C%20me%20interesa%20una%20consultor%C3%ADa%20sobre%20implementaci%C3%B3n%20ERP%2FCRM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-flex bg-gradient-to-r from-[#3574E3] to-[#60A5FA] px-5 py-2 rounded-full font-semibold text-white shadow-md hover:scale-105 transition duration-200"
-              aria-label="Contactar por WhatsApp para consultoría Project Management ERP/CRM"
-              data-gtm-event="header_whatsapp_click"
-            >
-              💬 WhatsApp
-            </a>
-
-            {/* Mobile Menu Button con targets táctiles ≥44px (Checklist #8) */}
-            <button 
-              className="md:hidden text-white p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
-              aria-label="Abrir menú móvil"
-              data-gtm-event="mobile_menu_toggle"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </nav>
-        </header>
+        {/* Header inteligente como Client Component */}
+        <SmartHeader />
 
         {/* MAIN content wrapper (Checklist GEO #6) */}
         <main>
@@ -328,7 +248,7 @@ export default function RootLayout({
                 <p className="text-blue-100 mb-4 leading-relaxed">
                   Consultoría independiente especializada en Project Management ERP/CRM para 
                   empresas en Latinoamérica. +25 años de experiencia 
-                  transformando empresas.f
+                  transformando empresas.
                 </p>
                 <div className="flex space-x-4">
                   <a 
